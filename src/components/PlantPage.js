@@ -7,7 +7,7 @@ function PlantPage() {
   const [filteredPlants, setFilteredPlants] = useState([])
   const [plants, setPlants] = useState([])
   useEffect(() => {
-    fetch('http://my-json-server.typicode.com/abdulh70/react-hooks-cc-plantshop/plants')
+    fetch('http://my-json-server.typicode.com/abdulh70/react-hooks-cc-plantshop/plant')
     .then(res => res.json())
     .then(data => {
       setPlants(data)
