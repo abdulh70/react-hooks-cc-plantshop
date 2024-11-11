@@ -11,7 +11,7 @@ function NewPlantForm({setPlants}) {
   }
   function handleSubmit(event){
     event.preventDefault()
-    fetch('http://localhost:6001/plants',{
+    fetch('http://my-json-server.typicode.com/abdulh70/react-hooks-cc-plantshop/plants',{
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
